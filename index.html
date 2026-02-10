@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTOFOLIO GIBRAN GAZANFAR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header-card">
+    <h1>PORTOFOLIO <span>GIBRAN</span></h1>
+    <p>Personal Website</p>
+    <p id="typing-text"></p>
+  </div>
+
+  <!-- CARD SECTION -->
+  <div class="container">
+    <div class="cards">
+
+      <a href="about.html" class="card">
+        <img src="img/tugas double eksposure png.png" alt="Tentang Saya">
+        <div class="card-content">
+          <i class="fa-solid fa-user icon"></i>
+          <h2>Tentang Saya</h2>
+          <p>Profil singkat saya</p>
+        </div>
+      </a>
+
+      <a href="skill.html" class="card">
+        <img src="img/skill.jpg" alt="Skill">
+        <div class="card-content">
+          <i class="fa-solid fa-user icon"></i>
+          <h2>Skill</h2>
+          <p>Skill yang saya miliki</p>
+        </div>
+      </a>
+
+      <a href="pengalaman.html" class="card">
+        <img src="img/experience.jpg" alt="Pengalaman">
+        <div class="card-content">
+          <i class="fa-solid fa-user icon"></i>
+          <h2>Pengalaman</h2>
+          <p>Pengalaman yang saya miliki</p>
+        </div>
+      </a>
+
+      <a href="kontak.html" class="card">
+        <img src="img/contact.jpg" alt="Kontak">
+        <div class="card-content">
+          <i class="fa-solid fa-user icon"></i>
+          <h2>Contact</h2>
+          <p>Kontak Saya</p>
+        </div>
+      </a>
+
+    </div> <!-- tutup .cards -->
+  </div> <!-- tutup .container -->
+
+  <!-- TYPING SCRIPT -->
+  <script>
+    const text = "Halo, perkenalkan nama saya Gibran Gazanfar Giyas El Hidayatullah. Saya Seorang Mahasiswa Teknik Informatika Yang Aktif Belajar Dan Senang Belajar Hal Baru Terima kasih telah mengunjungi website pribadi saya.";
+    let index = 0;
+
+    function typingEffect() {
+      if (index < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typingEffect, 50);
+      }
+    }
+
+    typingEffect();
+  </script>
+
+</body>
+</html>
